@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-const API_KEY = import.meta.env.VITE_APY_KEY;
+// const API_KEY = import.meta.env.VITE_APY_KEY;
+const API_KEY = 'weN6bJr6wq0BYTuTXHjgUwroXq22xSVz';
 
 
 export const useFetchGifs = (category) => {

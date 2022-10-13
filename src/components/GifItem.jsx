@@ -1,9 +1,7 @@
-export const GifItem = ({ data }) => {
-  const { title, images } = data;
-  const {
-    downsized_medium: { url },
-  } = images;
+import PropTypes from 'prop-types'
 
+export const GifItem = ({ title, url }) => {
+  
   return (
     <div className="card">
       <img src={url} alt={title} />
@@ -11,3 +9,8 @@ export const GifItem = ({ data }) => {
     </div>
   );
 };
+
+GifItem.propTypes = {
+  title:PropTypes.string.isRequired,
+  url:PropTypes.string.isRequired,
+}
